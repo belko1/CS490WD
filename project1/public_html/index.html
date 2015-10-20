@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/headercss.css">
+    </head>
+    <body>      
+        <header>
+            <div class="site_logo">
+                <img class="logo" src="images/movie.png" title="logo" alt="website logo">
+                <p class="title">RENT A MOVIE</p>
+            </div>
+            <div class="search_group">
+                <input type="search" id="search_box" class="search" placeholder="Search for Movies Here">
+                <input type="button" id="search_button" class="google" value="SEARCH">
+                <div id="suggestions_box" class="suggestions"></div>
+            </div>
+        </header>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="scripts/search.js"></script>
+        <script src="scripts/movies.js"></script>
+    </body>
+</html>
+

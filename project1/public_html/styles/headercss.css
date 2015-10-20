@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 16, 2015, 12:15:55 PM
+    Author     : brienbelko
+*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Oleo.woff);
+}
+
+/*
+*/
+header {
+    background-color: lightgray;
+    border-radius: 6px;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    height: 90px;
+}
+
+/* 
+    Not sure I need this anymore
+*/
+div.site_logo{
+    width: 300px;
+    height: 60px;
+}
+
+/*
+*/
+img.logo {
+    width: 60px;
+    height: 60px;
+    visibility: hidden;
+    float: left;
+}
+
+/*
+*/
+p.title {
+    font-family: myFirstFont;
+    font-size: 26px;
+    float: left;
+    margin: 16px 10px;
+}
+
+/*
+*/
+div.search_group {
+    text-align: center;
+}
+
+/*
+*/
+input.search {
+    min-width: 200px;
+    font-size: 15px;
+    margin-bottom: 10px; 
+}
+
+/*
+need to change highlight
+*/
+.search:focus {
+    
+}
+
+/*
+*/
+input.google {
+    background-color: blue;
+    border-radius: 0px 6px 6px 0px;
+    border-width: 0px;
+    color: white;
+    margin-left: -6px;   
+}
+
+/*
+*/
+div.suggestions{
+    width: 100px;
+    background-color: white;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    display: none;
+    margin: -1px 0px 0px 5px;
+    overflow: auto;
+    z-index: 50;
+    padding:5px;
+}
+
+/*
+*/
+div.sub_suggestions{
+    padding: 5px;
+}
+
+/*
+*/
+div.sub_suggestions:hover{
+    background-color: rgb(245, 245, 245);
+}
+    
+@media all and (min-width: 480px) {
+    /*CSS for displays with width equal or large
+    than 480px*/
+    /*
+    */
+    header {
+    width: 100%;
+    max-height: 60px;
+    }
+    
+    /*
+    */
+    div.site_logo{ 
+    
+    }
+    
+    /*
+    */
+    img.logo {
+        visibility: visible;
+    }
+
+    /*
+    */
+    p.title {
+    }
+    
+    /*
+    */
+    div.search_group {
+        position: absolute;
+        text-align: left;
+        top: 7px;
+        left: 305px;
+        min-width: 400px;
+    }
+ 
+    /*
+    */
+    input.search {
+        width: 420px;
+        margin: 24px 0px 24px 10px;
+    }
+
+    /*
+    */
+    input.google {
+    }
+    
+    /*
+    */
+    div.suggestions{
+        width: 470px;
+    }
+    
+    /*
+    */
+    div.sub_suggestions{
+    }
+
+    /*
+    */
+    div.sub_suggestions:hover{
+    }
+
+}
